@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     binding.pry
-    split = self.split(\p{Punct})
+    split = self.split(""\p{Punct}"")
     split.count
   end
 end
