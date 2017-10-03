@@ -17,9 +17,6 @@ class String
   def count_sentences
     binding.pry
     #complex_string = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
-    self.split((/\"."\*/) || "?" || "!").count
-    complex_string.split(/\b[A-Z].\p{P}*/)#.count
-    complex_string.split(/\. |\? |\! /)
-    #complex_string.reject {|strings| strings.empty?}
+    self..split(/\. |\? |\! /).count
   end
 end
