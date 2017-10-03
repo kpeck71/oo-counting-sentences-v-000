@@ -17,6 +17,6 @@ class String
   def count_sentences
     #binding.pry
     #complex_string = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
-    self..split(/\. |\? |\! /).count
+    self.split(/\. |\? |\! /).count
   end
 end
