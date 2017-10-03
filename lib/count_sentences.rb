@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     #binding.pry
-    self.split("." || "?" || "!").count
+    self.split("." || "?" || "!").to_s.count
     #splits.reject {|strings| strings.empty?}
   end
 end
