@@ -18,5 +18,6 @@ class String
     #binding.pry
     splits = self.split
     splits.reject {|strings| strings.to_s.empty?}
+    splits.count
   end
 end
